@@ -1,9 +1,9 @@
 resource "aws_ecs_cluster" "cluster" {
-    name = "${var.app}-ecs-cluster"
+    name = "${var.app_name}-ecs-cluster"
 }
 
 resource "aws_cloudwatch_log_group" "ecs_logs" {
-    name = "${var.app}-ecs-logs"
+    name = "${var.app_name}-ecs-logs"
 }
 
 resource "aws_security_group" "ecs_sg" {
