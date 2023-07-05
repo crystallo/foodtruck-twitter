@@ -41,7 +41,7 @@ resource "aws_lb_target_group" "target_group" {
         matcher = "200"
         timeout = "3"
         path = "/"
-        unhealthy_threhsold = "2"
+        unhealthy_threshold = "2"
     }
 }
 
