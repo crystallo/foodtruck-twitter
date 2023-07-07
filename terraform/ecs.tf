@@ -85,7 +85,7 @@ resource "aws_ecs_service" "ecs" {
 
     network_configuration {
         subnets = var.aws_private_subnet_ids
-        assign_public_ip = false
+        assign_public_ip = true
         security_groups = [
             aws_security_group.ecs_sg.id,
             aws_security_group.lb_sg.id
